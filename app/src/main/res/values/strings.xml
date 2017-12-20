@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BerberApp</string>
+
+    <string name="home_menu_title">Inicio</string>
+    <string name="store_menu_title">Tienda</string>
+    <string name="account_menu_title">Cuenta</string>
+    <string name="events_menu_title">Eventos</string>
+    <string name="faq_menu_title">FAQ</string>
+    <string name="contact_menu_title">Contacto</string>
+    <string name="selling_points_title">Tiendas</string>
+    <string name="sign_in">Iniciar Sesion</string>
+    <string name="berber_account_body">CERVEZA BERBER SA DE CV  \nCuenta 3774967  \nSuc. 7010TC  \nClabe 002320701037749670</string>
+    <string name="confirm_payment_label">Confirma tu pago en:  \nventas@berber.com.mx</string>
+
+    <string-array name="address_spinner_data">
+        <item>Zapopan</item>
+        <item>Guadalajara</item>
+        <item>Tlaquepaque</item>
+    </string-array>
+
+    <string-array name="payment_type_spinner_data">
+        <item>Depósito</item>
+        <item>Oxxo</item>
+        <item>Transferencia</item>
+        <item>Efectivo</item>
+    </string-array>
+
+    <string-array name="temperature_type_spinner_data">
+        <item>Frías</item>
+        <item>Al Tiempo</item>
+    </string-array>
+
+
+    <integer name="slide_animation_duration">300</integer>
+    <integer name="fade_animation_duration">1000</integer>
+
+</resources>

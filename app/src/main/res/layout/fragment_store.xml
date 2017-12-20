@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.berber.berberapp.Fragments.StoreFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/warning_not_logged_in"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:text="No has iniciado sesión, por favor inicia para poder comprar." />
+
+            <Button
+                android:id="@+id/signin_btn_store_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorButtonBackground"
+                android:textColor="@color/colorWhite"
+                android:text="Iniciar Sesión" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/store_layout_wrapper_store_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/amount_layout_view_fragment_store">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_fragment_store"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/amount_layout_view_fragment_store"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAmuntView">
+
+        <!--
+        <TextView
+            android:id="@+id/total_amount_textview_fragment_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Cantidad: "/>
+            -->
+
+        <Button
+            android:id="@+id/add_to_cart_btn_fragment_store"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorButtonBackground"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:textSize="11sp"
+            android:text="Proceder al carrito"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

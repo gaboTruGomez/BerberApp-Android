@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.berber.berberapp.Activities.BeerDetailActivity"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/beer_imgview_detail_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="2dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="false"
+            app:contentPadding="0dp"
+            android:layout_margin="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/beer_description_textview_detail_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="13sp"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/beer_alcoholic_grade_textview_detail_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grado alcohólico: -"
+                    android:textSize="12sp"
+                    android:layout_below="@id/beer_description_textview_detail_activity"/>
+                <TextView
+                    android:id="@+id/beer_bitterness_grade_textview_detail_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unidades de amargor: -"
+                    android:textSize="12sp"
+                    android:layout_below="@id/beer_alcoholic_grade_textview_detail_activity"/>
+                <TextView
+                    android:id="@+id/beer_malta_textview_detail_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maltas: -"
+                    android:textSize="12sp"
+                    android:layout_below="@id/beer_bitterness_grade_textview_detail_activity"/>
+                <TextView
+                    android:id="@+id/beer_style_textview_detail_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Estilo: -"
+                    android:textSize="12sp"
+                    android:layout_below="@id/beer_malta_textview_detail_activity"/>
+                <TextView
+                    android:id="@+id/beer_fermentation_textview_detail_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fermentación: -"
+                    android:textSize="12sp"
+                    android:layout_below="@id/beer_style_textview_detail_activity"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp"
+        android:layout_margin="3dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="5dp"
+                android:layout_weight=".4">
+
+                <TextView
+                    android:id="@+id/pairing_title_textview_detail_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Maridaje: "/>
+
+                <TextView
+                    android:id="@+id/beer_pairing_description_textview_detail_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_below="@id/pairing_title_textview_detail_activity"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="5dp"
+                android:layout_weight=".6">
+
+                <TextView
+                    android:id="@+id/presentations_title_textview_detail_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Presentaciones: "/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/presentations_title_textview_detail_activity"
+                    android:weightSum="3">
+
+                    <RelativeLayout
+                        android:id="@+id/beer_bottle_layout_detail_activity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:padding="10dp"
+                            android:src="@drawable/beer_bottle"
+                            android:layout_above="@id/beer_bottle_title_textview_detail_activity"/>
+
+                        <TextView
+                            android:id="@+id/beer_bottle_title_textview_detail_activity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:text="Botella 355 ml"
+                            android:textAlignment="center"
+                            android:textSize="10sp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/beer_can_layout_detail_activity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:padding="10dp"
+                            android:src="@drawable/beer_can"
+                            android:layout_above="@id/beer_can_title_textview_detail_activity"/>
+
+                        <TextView
+                            android:id="@+id/beer_can_title_textview_detail_activity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:text="Lata 475 ml"
+                            android:textAlignment="center"
+                            android:textSize="10sp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/beer_barrel_layout_detail_activity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:padding="10dp"
+                            android:src="@drawable/beer_barrel"
+                            android:layout_above="@id/beer_barrel_title_textview_detail_activity"/>
+
+                        <TextView
+                            android:id="@+id/beer_barrel_title_textview_detail_activity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:text="Barril 20 Lts"
+                            android:textAlignment="center"
+                            android:textSize="10sp"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
