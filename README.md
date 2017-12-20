@@ -7,7 +7,7 @@ The app is not yet complete, also currently working on iOS version.
 
 Below are some images of the app itself:
 
-<img src="images/home.png" alt="Account" style="width: 200px;"/>
+<img src="images/home.png" alt="Account" style="width: 200px; height: 200px"/>
 <img src="images/store_not_loggedin.png" alt="Account" style="width: 200px;"/>
 <br>
 <img src="images/events.png" alt="Account" style="width: 200px;"/>
